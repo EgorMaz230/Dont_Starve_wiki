@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Starve Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/Don't_Starve_Wiki_Logo.png" alt="Don't Starve Wiki">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Don't Starve</a>
+                    <ul class="dropdown">
+                        <li><a href="#">История версий</a></li>
+                        <li><a href="#">Персонажи</a></li>
+                        <li><a href="#">Игровой мир</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">DLC</a>
+                    <ul class="dropdown">
+                        <li><a href="#">История версий</a></li>
+                        <li><a href="#">Персонажи</a></li>
+                        <li><a href="#">Игровой мир</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Don't Starve Together</a>
+                    <ul class="dropdown">
+                        <li><a href="#">История версий</a></li>
+                        <li><a href="#">Персонажи</a></li>
+                        <li><a href="#">Игровой мир</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Сообщество</a>
+                    <ul class="dropdown">
+                        <li><a href="#">История версий</a></li>
+                        <li><a href="#">Персонажи</a></li>
+                        <li><a href="#">Игровой мир</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="icon-container">
+            <a href="#" id="search-icon"> <i class="fas fa-search"></i></a>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="main-article">
+                <h3 style="font-size: 38px; margin-top: 30px; margin-bottom: 40px; font-weight: 100;">Головна</h3>
+                <div class="mp_title">Ласкаво просимо на Don't Starve вікі!</div>
+                <!-- <img  src="./Dont-Starve-Together.webp" alt="Don't Starve Image"> -->
+                <video class="imgMain" src="./img/_Don't Starve Together Launch Trailer.mp4" autoplay muted playsinline></video>
+                
+                <div class="mp_title">Навігація</div>
+                <div class="navigation">
+                    <div class="section">
+                        <h3 class="h3Nav">Боси</h3>
+                        <div class="boxes bosses"></div>
+                        <div class="pagination"></div>
+                        <span class="heart-icon far fa-heart"></span>
+
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="h3Nav">Їжа</h3>
+                        <div class="boxes food">
+                            
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="section">
+                        <h3 class="h3Nav">Геймплей</h3>
+                        <div class="boxes gameplay">
+                            
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="section">
+                        <h3 class="h3Nav">Персонажі</h3>
+                        <div class="boxes characters">
+                            
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+                </div>
+                <div class="favorites">
+                    <p>Подивитися ваших улюблених персонажів</p>
+                    <span class="arrow" onclick="openModal()">&#9654;</span>
+                </div>
+                <div class="modal2" id="modal2">
+                    <div class="modal-content2">
+                        <span class="close2" onclick="closeModal()">&times;</span>
+                        <h2>Улюблене</h2>
+                        <div class="favorites-boxes"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sidebar">
+                <div class="mp_title">Посилання</div>
+                <div class="containerlink">
+                    <img class="iconLI" src="./img/Facebook_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Instagram_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Discord_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Klei_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Kleishop_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Rewards_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Steam_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Twitch_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Twitter_icon.webp" alt="">
+                    <img class="iconLI" src="./img/Youtube_icon.webp" alt="">
+                </div>
+
+            <div>
+                <div style="margin-top: 50px;" class="mp_title"><span style="color: deepskyblue;">Український</span>  <span style="color: yellow;">переклад</span></div>
+                    
+
+                    <div class="rsfbox"><img class="imgUkt" src="./img/загружено.jpeg" alt=""><div class="rsfcaption"><span style="margin-bottom: 20px;">DST / DS</span></div></div>
+            </div>
+            <div style="margin-top: 150px;" class="mp_title">Огляд гри</div>
+            <iframe style="margin-top: 30px;" width="300" height="200" src="https://www.youtube.com/embed/HzojwCO2LMo" title="We Survived 100 Days in Don&#39;t Starve Together" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+                <div style="margin-top: 150px;" class="mp_title">Найкращі моди</div>
+                <div class="mods">      
+
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/eat.png" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">Food Values</span></div></div>
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/Снимок экрана 2024-07-05 145802.png" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">Mini Map</span></div></div>
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/combain.jpeg" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">Craft Pot</span></div></div>
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/rot.jpeg" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">Wormhole</span></div></div>
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/drop.jpeg" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">Quick Drop</span></div></div>
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/bufalo.jpeg" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">My Beefalo</span></div></div>
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/chest.jpeg" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">Smart Chest</span></div></div>
+                    <div class="rsfbox2"><img class="imgUkt2" src="./img/freze.jpeg" alt=""><div class="rsfcaption2"><span style="margin-bottom: 20px;">Ice Chekbox</span></div></div>
+            </div>
+                
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </section>
+        <div id="search-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <input type="text" id="search-input" placeholder="Search...">
+                <div id="search-results"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
