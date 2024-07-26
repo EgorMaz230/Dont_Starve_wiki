@@ -46,7 +46,13 @@ color: #333;
     font-size: 38px; */
 
 }
-
+.iconLI{
+    transition: transform .2s;
+    cursor: pointer;
+}
+.iconLI:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 header {
 display: flex;
 align-items: center;

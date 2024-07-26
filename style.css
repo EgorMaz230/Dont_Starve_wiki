@@ -271,11 +271,21 @@ main {
     top: 20px;
     right: 20px;
     font-size: 24px;
-    color: #ded3be;
+    color: lightgray;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, color 0.3s;
     cursor: pointer;
 }
+
+.box:hover .heart-icon {
+    opacity: 1;
+}
+
+.heart-icon.fas {
+    color: #694f40; /* Коричневый цвет */
+    opacity: 1; /* Всегда видим, если стоит лайк */
+}
+
 
 .box:hover .heart-icon {
     opacity: 1;
