@@ -826,10 +826,11 @@ main {
         width: 90%;
     }
     .heart-icon {
-        position: absolute;
-        top: 40px;
-        right: 40px;
+        display: none;
        
+    }
+    .favorites{
+        display: none;
     }
     }
     
