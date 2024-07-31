@@ -16,23 +16,20 @@
            <a href="./index.html"> <img src="./img/Don't_Starve_Wiki_Logo.png" alt="Don't Starve Wiki"></a>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Don't Starve</a>
-                    
-                </li>
-                <li><a href="#">DLC</a>
-                    
-                </li>
-                <li><a href="#">Don't Starve Together</a>
-                    
-                </li>
-                <li><a href="#">Сообщество</a>
-                    
-                </li>
+            <ul class="menu">
+                <li><a href="#">Don't Starve</a></li>
+                <li><a href="#">DLC</a></li>
+                <li><a href="#">Don't Starve Together</a></li>
+                <li><a href="#">Сообщество</a></li>
             </ul>
         </nav>
         <div class="icon-container">
-            <a href="#" id="search-icon"> <i class="fas fa-search"></i></a>
+            <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
@@ -156,6 +153,16 @@
         </div>
         
     </div>
-   
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const nav = document.querySelector('nav');
+    
+            burgerMenu.addEventListener('click', function() {
+                burgerMenu.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>
