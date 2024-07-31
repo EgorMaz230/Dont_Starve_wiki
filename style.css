@@ -6,7 +6,7 @@
         text-decoration: none;  
         /* border: 1px solid #000; */
         
-        
+        /* border: 1px solid #000; */
        }  
          
        
@@ -817,10 +817,10 @@ main {
     }
     .mp_title{
         font-size: 20px;
-        width: 75%;
+        width: 95%;
     }
     .box{
-        margin-left: -50px;
+        margin: 20px auto;
     }
     header{
         width: 90%;
@@ -832,5 +832,17 @@ main {
     .favorites{
         display: none;
     }
+    .box:hover {
+       
+        margin: 0;
+        
+    }
+    .boxes {
+    
+        width: 100%;
+        
+        
+    }
+
     }
     
