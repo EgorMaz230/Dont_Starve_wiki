@@ -807,3 +807,11 @@ main {
     
 
 }
+
+@media (max-width: 700px) {
+    .imgMain{
+        display: none;
+    }
+    
+    }
+    

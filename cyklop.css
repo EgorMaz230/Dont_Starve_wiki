@@ -6,7 +6,7 @@
     /* text-decoration: none;   */
     /* border: 1px solid #000; */
     /* border: 1px solid #000; */
-    
+    /* border: 1px solid #000; */
    }  
      
    
@@ -751,12 +751,20 @@ ul {
 
 @media (max-width: 700px) {
 .container{
-    width: 100%;
+    width: 89%;
 }
 .consection3{
     width: 100%;
 }
 }
+
+
+
+
+
+
+
+
 
 
 
