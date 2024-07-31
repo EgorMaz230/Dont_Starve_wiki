@@ -239,3 +239,16 @@ function closeModal() {
         modal.style.display = 'none';
     }, 500); // Duration matches the CSS transition
 }
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
+
+        burgerMenu.addEventListener('click', function() {
+            burgerMenu.classList.toggle('open');
+            nav.classList.toggle('open');
+        });
+    });
+

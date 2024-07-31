@@ -44,9 +44,11 @@ body {
     color: #333;
     /* font-family: "Caveat", cursive;
         font-size: 38px; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
 }
-
 header {
     display: flex;
     align-items: center;
@@ -54,18 +56,19 @@ header {
     background-color: #46270e;
     padding: 20px;
     color: white;
-    /* margin-top: -19px; */
 }
 
 .logo img {
     width: 175px;
 }
-p{
+
+p {
     font-family: "Amatic SC", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -92,6 +95,7 @@ nav ul li {
 .icon-container i:hover {
     color: #3498db;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -103,47 +107,58 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav ul li .dropdown {
+.burger-menu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #e3d0ac;
-    padding: 10px 0;
-    list-style: none;
-    margin: 0;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-nav ul li .dropdown li {
-    margin: 0;
-}
-
-nav ul li .dropdown li a {
-    color: #333;
-    padding: 10px 20px;
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-nav ul li .dropdown li a:hover {
-    background-color: #d1b892;
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-.icons a {
-    margin: 0 10px;
-}
-
-.icons img {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
     height: 24px;
-    width: 24px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #46270e;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu.open span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    .burger-menu.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+    }
+
+    nav.open ul {
+        display: flex;
+    }
 }
 
 main {
@@ -781,4 +796,14 @@ main {
 
 .modal2 h2 {
     margin-top: 0;
+}
+
+@media (max-width: 1140px) {
+    .sidebar {
+       
+        display: none
+    }
+
+    
+
 }
