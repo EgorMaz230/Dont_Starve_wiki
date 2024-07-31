@@ -812,6 +812,18 @@ main {
     .imgMain{
         display: none;
     }
-    
+    main{
+        width: 99%;
+    }
+    .mp_title{
+        font-size: 20px;
+        width: 80%;
+    }
+    .box{
+        margin-left: -20px;
+    }
+    header{
+        width: 100%;
+    }
     }
     
