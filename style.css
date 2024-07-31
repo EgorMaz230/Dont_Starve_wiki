@@ -813,17 +813,23 @@ main {
         display: none;
     }
     main{
-        width: 99%;
+        width: 90%;
     }
     .mp_title{
         font-size: 20px;
-        width: 80%;
+        width: 75%;
     }
     .box{
-        margin-left: -20px;
+        margin-left: -50px;
     }
     header{
-        width: 100%;
+        width: 90%;
+    }
+    .heart-icon {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+       
     }
     }
     
